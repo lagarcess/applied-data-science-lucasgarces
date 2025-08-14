@@ -1,0 +1,35 @@
+[project]
+name = "applied-data-science-lucasgarces"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "pandas (>=2.3.1,<3.0.0)",
+    "numpy (>=2.3.2,<3.0.0)",
+    "scikit-learn (>=1.7.1,<2.0.0)",
+    "jupyterlab (>=4.4.5,<5.0.0)",
+    "pre-commit (>=4.3.0,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "applied-data-science"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "applied_data_science", from = "src"}] # Add this line
+
+[tool.poetry.dependencies]
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+ruff = "^0.12.8"
