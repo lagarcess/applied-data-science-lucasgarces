@@ -13,6 +13,11 @@ dependencies = [
     "numpy (>=2.3.2,<3.0.0)",
     "scikit-learn (>=1.7.1,<2.0.0)",
     "jupyterlab (>=4.4.5,<5.0.0)",
+    "dabl (>=0.3.2,<0.4.0)",
+    "ipykernel (>=6.30.1,<7.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "matplotlib (>=3.10.5,<4.0.0)",
+    "pyjanitor (>=0.31.0,<0.32.0)",
 ]
 
 
@@ -33,3 +38,4 @@ packages = [{include = "applied_data_science", from = "src"}]
 black = "^25.1.0"
 ruff = "^0.12.8"
 pre-commit = "^4.3.0"
+jupyter = "^1.1.1"
